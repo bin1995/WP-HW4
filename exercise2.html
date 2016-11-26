@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise2</title>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#button_one").click(function(){
+                    $("p:first").hide();
+                });
+                $("#button_two").click(function(){
+                    $("p#pTwo").hide();
+                });
+                $("#button_three").click(function(){
+                    $("p.pThree").hide();
+                });
+                $("#button_show").click(function(){
+                    $("p").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Web Prgramming</h1>
+        <button id="button_one">1</button>
+        <button id="button_two">2</button>
+        <button id="button_three">3</button>
+        <button id="button_show">show</button>
+
+        <p>hide1</p>
+        <p id="pTwo">hide2</p>
+        <p class="pThree">hide3</p>
+
+        
+    </body>
+</html>
